@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "HelveticaLight";
+    src: url("../assets/helvetica.otf");
+}
+@font-face{
+    font-family: "PressStart";
+    src: url("../assets/PressStart2P.ttf")
+}
+
+body {
+    position: absolute; 
+    width: 100vw;
+    display: flex;
+    .square-background{
+        z-index: 1;
+        
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background: #ff0000;
+        background: linear-gradient(180deg, #ff0000 0%, rgba(227,227,227,1) 27%, rgba(227,227,227,1) 75%, rgba(164,164,164,1) 100%);
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+        h1 {
+            margin-top: 3vh;
+            flex-direction: row;
+            color: black;
+            font-family: "HelveticaLight";
+            font-size: 50px; 
+        }
+        img {
+            width: 100%;
+        }
+        .photos {
+            width: 90vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+            
+            .photo-1 {
+                width: 44vw;
+                &:hover{
+                    height:100%;
+                    width:100%;
+                    transition:2s;
+                }
+                @media (min-width: 768px){
+                    width: 30vw;                    
+                }
+                @media (min-width: 1440px){
+                    &:hover{
+                        height:50%;
+                        width:50%;
+                        transition:2s;
+                    }                
+                }
+            }
+            .photo-2{
+                width:44vw;
+                &:hover{
+                    height:100%;
+                    width:100%;
+                    transition:2s;
+                }
+                @media (min-width: 768px){
+                    width: 30vw;                    
+                }
+                @media (min-width: 1440px){
+                    &:hover{
+                        height:50%;
+                        width:50%;
+                        transition:2s;
+                    }                
+                }
+            }
+            @media (min-width: 768px){
+                width: 80vw;
+                margin-left: 10vw;
+                margin-right: 10vw;
+
+            }
+        }
+        .about {
+            width: 90vw;
+            margin-left: 5vw; 
+            text-align: left;
+        
+            p {
+                font-family: "HelveticaLight";
+                font-size: 17px;
+                line-height: 4vw;
+        
+                @media (min-width: 550px){
+                    font-size: 24px;
+                    line-height: 100%;
+                }
+            }
+        }
+        .photos-2 {
+            width: 90vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            
+            
+            .photo-3 {
+                width: 44vw;
+                &:hover{
+                    height:100%;
+                    width:100%;
+                    transition:2s;
+                }
+                @media (min-width: 768px){
+                    width: 30vw;                    
+                }
+                @media (min-width: 1440px){
+                    &:hover{
+                        height:50%;
+                        width:50%;
+                        transition:2s;
+                    }                
+                }
+            }
+            .photo-4{
+                width:44vw;
+                &:hover{
+                    height:100%;
+                    width:100%;
+                    transition:2s;
+                }
+                @media (min-width: 768px){
+                    width: 30vw;                    
+                }
+                @media (min-width: 1440px){
+                    &:hover{
+                        height:50%;
+                        width:50%;
+                        transition:2s;
+                    }                
+                }
+            }
+            @media (min-width: 768px){
+                width: 80vw;
+                margin-left: 10vw;
+                margin-right: 10vw;
+
+            }
+        }
+        .back-button {
+            width: 50px;
+            height: 23px;
+            border-radius: 40px;
+            background-color: #ff0000;
+            font-family:"HelveticaLight";
+            font-size: 18px;
+            text-align: center;
+            color: black;
+            justify-content: center;
+            box-shadow: 0 5px 5px 0 rgb(143, 143, 143);
+            @media (min-width: 550px){
+                width: 100px;
+                height: 30px;
+                font-size: 24px;
+
+            }
+        }
+        .back-button:active{
+            transform: translate(0, 5px);
+            box-shadow: 0 0 0 --2px rgb(143, 143, 143);
+        }
+        a {
+            text-decoration: none;
+        }
+
+    }
+}
