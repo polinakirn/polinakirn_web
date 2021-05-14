@@ -97,8 +97,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: background-3 120s infinite;
-          animation: background-3 120s infinite;
+  -webkit-animation: background-3 160s infinite;
+          animation: background-3 160s infinite;
 }
 
 @media (min-width: 700px) {
